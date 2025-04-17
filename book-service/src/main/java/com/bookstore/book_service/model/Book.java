@@ -7,6 +7,9 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Book {
+
+    public Book(){};
+
     public Book(Long id, String title, String author, String genre, double price) {
         this.id = id;
         this.title = title;

@@ -5,6 +5,16 @@ spring:
   application:
     name: user-service
 
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: rinshad3657
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
 eureka:
   client:
     server-url:
