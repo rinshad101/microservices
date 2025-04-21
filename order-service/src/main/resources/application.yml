@@ -3,7 +3,17 @@ server:
 
 spring:
   application:
-    name: order-service
+    name: user-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/orderdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: rinshad3657
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 eureka:
   client:
