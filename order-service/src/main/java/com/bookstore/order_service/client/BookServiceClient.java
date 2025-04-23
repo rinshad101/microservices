@@ -9,6 +9,6 @@ import java.util.Map;
 @FeignClient(name = "book-service")
 public interface BookServiceClient {
 
-    @GetMapping("/api/books/{id}")
+    @GetMapping("/api/book/{id}")
     Map<String,Object> getBookById(@PathVariable("id") Long id );
 }
